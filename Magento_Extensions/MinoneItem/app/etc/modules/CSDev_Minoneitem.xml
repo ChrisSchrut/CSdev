@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <CSdev_Minoneitem>
+            <active>true</active>
+            <codePool>local</codePool>
+        </CSdev_Minoneitem>
+    </modules>
+</config>

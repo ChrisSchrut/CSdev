@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <CSdev_Minoneitem>
+            <version>0.1.0</version>
+        </CSdev_Minoneitem>
+    </modules>
+    
+    <global>
+        <models>
+            <csdev_minoneitem>
+                <class>CSdev_Minoneitem_Model</class>
+            </csdev_minoneitem>
+        </models> 
+        
+        <events>
+            <controller_action_predispatch_checkout_cart_index>
+                <observers>
+                    <csdev_minoneitem_add>
+                        <type>singleton</type>
+                        <class>CSdev_Minoneitem_Model_Addproduct</class>
+                        <method>addProduct</method>
+                    </csdev_minoneitem_add>
+                </observers>
+            </controller_action_predispatch_checkout_cart_index>
+        </events>
+    </global>
+</config>
