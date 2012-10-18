@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/*
+ * @category:   CSdev
+ * @package:    CSdev_TotalZero
+ * @author:     Christian Schrut   
+ * 
+ * Copyright (c) 2012 Christian Schrut
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms are permitted
+ * provided that the above copyright notice and this paragraph are
+ * duplicated in all such forms and that any documentation,
+ * advertising materials, and other materials related to such
+ * distribution and use acknowledge that the software was developed
+ * by the <organization>.  The name of the
+ * University may not be used to endorse or promote products derived
+ * from this software without specific prior written permission.
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+ * 
+ */
+ -->
+
+<config>
+    <modules>
+        <CSdev_TotalZero>
+            <version>0.1.0</version>
+        </CSdev_TotalZero>
+    </modules>
+    <global>
+        <blocks>
+            <totalzero>
+                <class>CSdev_TotalZero_Block</class>
+            </totalzero>
+            <checkout>
+                <rewrite>
+                    <onepage_payment_methods>CSdev_TotalZero_Block_Onepage_Payment_Methods</onepage_payment_methods>
+                </rewrite>
+            </checkout>
+        </blocks>
+    </global>
+</config>
